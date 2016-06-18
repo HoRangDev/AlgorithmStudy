@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+
+*.tlog
+
+*.db
+*.opendb
+*.TMP
+*.idb
