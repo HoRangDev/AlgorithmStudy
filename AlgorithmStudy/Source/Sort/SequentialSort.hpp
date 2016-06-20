@@ -4,7 +4,7 @@
 /*
 * Name			 : Squential Sort
 * Time Complexity: O(N^2)
-* Reference		 : http://ehclub.tistory.com/1483
+* Reference		 : http://ehclub.co.kr/1484
 */
 template <typename _Ty, int N>
 void SequentialSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
