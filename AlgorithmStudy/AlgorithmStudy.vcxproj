@@ -113,6 +113,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Source\Helper\Helper.hpp" />
+    <ClInclude Include="Source\Sort\BubbleSort.h" />
     <ClInclude Include="Source\Sort\SequentialSort.hpp" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,9 @@
     <ClInclude Include="Source\Helper\Helper.hpp">
       <Filter>Source Files\Helper</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Sort\BubbleSort.h">
+      <Filter>Source Files\Sort</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Tests.cpp">
