@@ -25,6 +25,9 @@
     <ClInclude Include="Source\Sort\SelectionSort.hpp">
       <Filter>Source Files\Sort</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Sort\InsertSort.hpp">
+      <Filter>Source Files\Sort</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Tests.cpp">

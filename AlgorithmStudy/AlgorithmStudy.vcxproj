@@ -114,6 +114,7 @@
   <ItemGroup>
     <ClInclude Include="Source\Helper\Helper.hpp" />
     <ClInclude Include="Source\Sort\BubbleSort.hpp" />
+    <ClInclude Include="Source\Sort\InsertSort.hpp" />
     <ClInclude Include="Source\Sort\SelectionSort.hpp" />
     <ClInclude Include="Source\Sort\SequentialSort.hpp" />
   </ItemGroup>

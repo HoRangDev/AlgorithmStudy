@@ -1,18 +1,21 @@
 #include "Sort\SequentialSort.hpp"
 #include "Sort\BubbleSort.hpp"
 #include "Sort\SelectionSort.hpp"
+#include "Sort\InsertSort.hpp"
 #include "Helper\Helper.hpp"
 using namespace std;
 
 void SequentialSortTest();
 void BubbleSortTest();
 void SelectionSortTest();
+void InsertSortTest();
 
 int main()
 {
 	SequentialSortTest();
 	BubbleSortTest();
 	SelectionSortTest();
+	InsertSortTest();
 
 	cout << endl << endl;
 
@@ -116,11 +119,52 @@ void SelectionSortTest()
 		PrintArrayElements(Arr);
 
 		cout << "Int Ascending Order" << endl;
-		BubbleSort(Arr);
+		SelectionSort(Arr);
 		PrintArrayElements(Arr);
 
 		cout << "Int Descending Order" << endl;
 		BubbleSort(Arr, false);
+		SelectionSort(Arr);
+	}
+
+	/* Case 2 */
+	{
+		cout << endl;
+		cout << "Case 2: Float Sorting" << endl;
+		array<float, 4> Arr{ 0.01f, 4.0f, 2.0f, 6.0f };
+
+		cout << "Original Array: " << endl;
+		PrintArrayElements(Arr);
+
+		cout << "Float Ascending Order" << endl;
+		SelectionSort(Arr);
+		PrintArrayElements(Arr);
+
+		cout << "Float Descending Order" << endl;
+		SelectionSort(Arr, false);
+		PrintArrayElements(Arr);
+	}
+}
+
+/* InsertSort Test */
+void InsertSortTest()
+{
+	cout << endl << " - Insert Sort - ";
+	/* Case 1 */
+	{
+		cout << endl;
+		cout << "Case 1: Int Sorting" << endl;
+		array<int, 7> Arr{ 5,4,2,1,3,7,6 };
+
+		cout << "Original Array: " << endl;
+		PrintArrayElements(Arr);
+
+		cout << "Int Ascending Order" << endl;
+		InsertSort(Arr);
+		PrintArrayElements(Arr);
+
+		cout << "Int Descending Order" << endl;
+		InsertSort(Arr, false);
 		PrintArrayElements(Arr);
 	}
 
@@ -134,11 +178,11 @@ void SelectionSortTest()
 		PrintArrayElements(Arr);
 
 		cout << "Float Ascending Order" << endl;
-		BubbleSort(Arr);
+		InsertSort(Arr);
 		PrintArrayElements(Arr);
 
 		cout << "Float Descending Order" << endl;
-		BubbleSort(Arr, false);
+		InsertSort(Arr, false);
 		PrintArrayElements(Arr);
 	}
 }
