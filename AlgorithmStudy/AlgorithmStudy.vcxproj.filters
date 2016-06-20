@@ -19,7 +19,10 @@
     <ClInclude Include="Source\Helper\Helper.hpp">
       <Filter>Source Files\Helper</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Sort\BubbleSort.h">
+    <ClInclude Include="Source\Sort\BubbleSort.hpp">
+      <Filter>Source Files\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sort\SelectionSort.hpp">
       <Filter>Source Files\Sort</Filter>
     </ClInclude>
   </ItemGroup>

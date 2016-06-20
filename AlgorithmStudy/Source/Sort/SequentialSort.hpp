@@ -23,7 +23,6 @@ void SequentialSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
 					Target[Y]	 = Target[X];
 					Target[X]	 = Temp;
 				}
-
 				break;
 
 			case false:
@@ -33,7 +32,6 @@ void SequentialSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
 					Target[Y]	= Target[X];
 					Target[X]	= Temp;
 				}
-
 				break;
 			}
 		}

@@ -23,7 +23,6 @@ void BubbleSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
 					Target[X]		= Target[X + 1];
 					Target[X + 1]	= Temp;
 				}
-
 				break;
 
 			case false:
@@ -33,7 +32,6 @@ void BubbleSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
 					Target[X + 1]	= Target[X];
 					Target[X]		= Temp;
 				}
-
 				break;
 			}
 		}
