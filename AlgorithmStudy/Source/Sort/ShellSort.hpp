@@ -3,7 +3,8 @@
 
 /*
 * Name						: Shell Sort
-* Worst Time Complexity		: O(N^2)
+* Average Time Complexity	: O(N^(3/2))
+* Worst   Time Complexity	: O(N^2)
 * Reference					: http://blog.naver.com/madplay/220229298991
 */
 template <typename _Ty, int N>
