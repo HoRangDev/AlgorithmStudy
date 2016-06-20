@@ -25,7 +25,10 @@
     <ClInclude Include="Source\Sort\SelectionSort.hpp">
       <Filter>Source Files\Sort</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Sort\InsertSort.hpp">
+    <ClInclude Include="Source\Sort\ShellSort.hpp">
+      <Filter>Source Files\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sort\InsertionSort.hpp">
       <Filter>Source Files\Sort</Filter>
     </ClInclude>
   </ItemGroup>

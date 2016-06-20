@@ -1,21 +1,24 @@
 #include "Sort\SequentialSort.hpp"
 #include "Sort\BubbleSort.hpp"
 #include "Sort\SelectionSort.hpp"
-#include "Sort\InsertSort.hpp"
+#include "Sort\InsertionSort.hpp"
+#include "Sort\ShellSort.hpp"
 #include "Helper\Helper.hpp"
 using namespace std;
 
 void SequentialSortTest();
 void BubbleSortTest();
 void SelectionSortTest();
-void InsertSortTest();
+void InsertionSortTest();
+void ShellSortTest();
 
 int main()
 {
 	SequentialSortTest();
 	BubbleSortTest();
 	SelectionSortTest();
-	InsertSortTest();
+	InsertionSortTest();
+	ShellSortTest();
 
 	cout << endl << endl;
 
@@ -146,10 +149,10 @@ void SelectionSortTest()
 	}
 }
 
-/* InsertSort Test */
-void InsertSortTest()
+/* InsertionSort Test */
+void InsertionSortTest()
 {
-	cout << endl << " - Insert Sort - ";
+	cout << endl << " - Insertion Sort - ";
 	/* Case 1 */
 	{
 		cout << endl;
@@ -160,11 +163,11 @@ void InsertSortTest()
 		PrintArrayElements(Arr);
 
 		cout << "Int Ascending Order" << endl;
-		InsertSort(Arr);
+		InsertionSort(Arr);
 		PrintArrayElements(Arr);
 
 		cout << "Int Descending Order" << endl;
-		InsertSort(Arr, false);
+		InsertionSort(Arr, 0, Arr.size() - 1 , 1, false);
 		PrintArrayElements(Arr);
 	}
 
@@ -178,11 +181,51 @@ void InsertSortTest()
 		PrintArrayElements(Arr);
 
 		cout << "Float Ascending Order" << endl;
-		InsertSort(Arr);
+		InsertionSort(Arr);
 		PrintArrayElements(Arr);
 
 		cout << "Float Descending Order" << endl;
-		InsertSort(Arr, false);
+		InsertionSort(Arr, false);
+		PrintArrayElements(Arr);
+	}
+}
+
+void ShellSortTest()
+{
+	cout << endl << " - Shell Sort - ";
+	/* Case 1 */
+	{
+		cout << endl;
+		cout << "Case 1: Int Sorting" << endl;
+		array<int, 7> Arr{ 5,4,2,1,3,7,6 };
+
+		cout << "Original Array: " << endl;
+		PrintArrayElements(Arr);
+
+		cout << "Int Ascending Order" << endl;
+		ShellSort(Arr);
+		PrintArrayElements(Arr);
+
+		cout << "Int Descending Order" << endl;
+		ShellSort(Arr, false);
+		PrintArrayElements(Arr);
+	}
+
+	/* Case 2 */
+	{
+		cout << endl;
+		cout << "Case 2: Float Sorting" << endl;
+		array<float, 4> Arr{ 0.01f, 4.0f, 2.0f, 6.0f };
+
+		cout << "Original Array: " << endl;
+		PrintArrayElements(Arr);
+
+		cout << "Float Ascending Order" << endl;
+		ShellSort(Arr);
+		PrintArrayElements(Arr);
+
+		cout << "Float Descending Order" << endl;
+		ShellSort(Arr, false);
 		PrintArrayElements(Arr);
 	}
 }

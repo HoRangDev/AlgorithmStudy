@@ -2,9 +2,9 @@
 #include <array>
 
 /*
-* Name					: Bubble Sort
-* Time Complexity		: O(N^2)
-* Reference				: http://ehclub.co.kr/1486
+* Name						: Bubble Sort
+* Time Complexity			: O(N^2)
+* Reference					: http://ehclub.co.kr/1486
 */
 template <typename _Ty, int N>
 void BubbleSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)

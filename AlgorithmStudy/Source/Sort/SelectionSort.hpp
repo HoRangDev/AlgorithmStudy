@@ -2,9 +2,9 @@
 #include <array>
 
 /*
-* Name					: SelectionSort
-* Time Complexity		: O(N^2)
-* Reference				: http://ehclub.co.kr/1489
+* Name						: SelectionSort
+* Time Complexity			: O(N^2)
+* Reference					: http://ehclub.co.kr/1489
 */
 template <typename _Ty, int N>
 void SelectionSort(std::array<_Ty, N>& Target, bool IsAscendingOrder = true)
